@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Calibri;
+  }
+  
+  html, body {
+    min-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  /*=========== "main" Section Styles ===========*/
+  .main {
+    flex-grow: 1;
+    flex-basis: 600px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .phone-img {
+    display: none;
+  }
+  
+  .content-container {
+    width: 350px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .login-container {
+    width: 100%;
+    padding: 46px 40px 32px;
+    box-sizing: border-box;
+  }
+  
+  .logo {
+    width: 250px;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  form input {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+  }
+  
+  input[type = "text"], input[type = "password"] {
+    padding: 9px 8px 7px;  
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+  }
+  
+  input[type = "submit"] {
+    padding: 7px 16px;
+    background-color: #4db5f9;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    border: none;
+    border-radius: 8px;
+  }
+  
+  .or-section {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .line {
+    width: 38%;
+    margin-top: 9px;
+    border-top: 1px solid #dbdbdb;
+  }
+  
+  .or {
+    margin: 0 18px;
+    font-weight: 600;
+    color: gray;
+  }
+  
+  .fb-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #385185;
+    font-weight: 600;
+  }
+  
+  .fb-icon {
+    height: 16px;
+    margin-right: 8px;
+  }
+  
+  .forgot-pw, .sign-up-container, .app-container {
+    text-align: center;
+  }
+  
+  .forgot-pw > a {
+    font-size: 14px;
+    color: black;
+    font-weight: 200;
+  }
+  
+  .sign-up-container, .app-container {
+    font-weight: 200;
+  }
+  
+  .sign-up-container > p > a {
+    color: #0095f6;
+    font-weight: 600;
+  }
+  
+  .sign-up-container {
+    width: 100%;
+    padding: 20px 0;
+    box-sizing: border-box;
+  }
+  
+  .app-container {
+    margin: 0 auto;
+  }
+  
+  .app-container img {
+    height: 40px;
+  }
+  
+  /*=========== "footer" Section Styles ===========*/
+  .footer {
+    padding: 56px 16px 52px;
+  }
+  
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .footer-links > a, .language-selector, .copyright {
+    color: gray;
+    font-size: 14px;
+    font-weight: 200;
+  }
+  
+  .footer-links > a {
+    margin: 0 8px 8px;
+  }
+  
+  .footer-bottom {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .language-selector {
+    width: 63px;
+    border: none;
+  }
+  
+  .language-selector:focus {
+    outline: none;
+  }
+  
+  .copyright {
+    margin-left: 16px;
+  }
+  
+  /*=========== Vertical Spacing ===========*/
+  .login-container input[type = "text"] {
+    margin-bottom: 6px;  
+  }
+  
+  .login-container input[type = "submit"] {
+    margin-top: 14px;
+    margin-bottom: 18px;
+  }
+  
+  .login-container > .fb-login {
+    margin-top: 26px;
+    margin-bottom: 20px;
+  }
+  
+  .sign-up-container {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .app-container > p {
+    margin-bottom: 20px;
+  }
+  
+  .footer-bottom {
+    margin: 10px 0;  
+  }
+  
+  
+  /* Medium devices */
+  @media screen and (min-width: 450px) {
+    .main {
+      padding-top: 32px;  
+    }
+    
+    .content-container {
+      justify-content: center;
+    }
+    
+    .login-container, .sign-up-container {
+      border: 1px solid #dbdbdb;
+    }
+  }
+  
+  
+  /* Large devices */
+  @media screen and (min-width: 850px) {
+    .main {
+      align-items: center;
+    }
+    
+    .phone-img {
+      width: 350px;
+      height: 595px;
+      margin-right: 32px;
+      display: block;
+    }
+  }
